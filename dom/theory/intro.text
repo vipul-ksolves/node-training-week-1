@@ -1,0 +1,7 @@
+## What is the DOM?
+The DOM stands for Document Object Model. It can simply be understood as a tree of nodes 
+created by the browser. Each of these nodes has its own properties and methods 
+which can be manipulated using JavaScript.
+
+The ability to manipulate the DOM is one of the most unique and useful abilities of 
+JavaScript.
