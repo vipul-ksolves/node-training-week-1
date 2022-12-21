@@ -1,0 +1,100 @@
+### What is the DOM?
+The DOM stands for Document Object Model. It can simply be understood as a tree of nodes 
+created by the browser. Each of these nodes has its own properties and methods 
+which can be manipulated using JavaScript.
+
+The ability to manipulate the DOM is one of the most unique and useful abilities of 
+JavaScript.
+
+### How to Select Elements in the DOM
+In order to be able to manipulate an element in the DOM, you have to select that particular 
+element. Luckily for us we have 4 major ways of selecting elements.
+
+
+    1. How to Select DOM Elements with the getElementById Method
+       The most common way to access an HTML element is to use the id of the element.
+
+       In the example below the getElementById() method used id="master" to find the element
+       
+       ===>  check practicle part
+
+    2. How to Select DOM Elements with the getElementsByClassName() Method
+
+        This method returns a collection of all elements in the document with the specified class name.
+
+        For example, our HTML page below contains three elements with class="master2", 
+        and I selected the button with the id of 'btn'.
+
+        If you click the button it would select all the elements with a class name 
+        of "master2" and change the innerHTML of the 3rd element.
+
+        ===>  check practicle part
+
+    3. How to Select DOM elements with the getElementsByTagName() Method
+
+        This method accepts a tag name and returns all the elements of the specified 
+        tag name in the order which they appear in the document.
+
+        The following code illustrates the syntax of getElementsByTagName() by 
+        getting all the p elements on the page and changing the content of the second element.
+
+    4. How to Select DOM Elements with CSS Selectors
+      a) .querySelector()
+
+        This returns the first value that matches the selector it’s given. 
+        This method can accept all CSS style selectors, allowing it to select by tag, 
+        class, or ID.
+
+        ===>  check practicle part
+
+        This method above takes one argument, which is a CSS selector, and returns the
+        first element that matches the selector.
+
+      b) .querySelectorAll()
+        This works similar to above which returns a node list collection of all matching elements.
+
+
+
+### How to Manipulate Elements in the DOM
+
+
+How to create elements
+How to set the innerHTML/ text content of an element
+How to append an element
+How to insert one element before another
+How to replace a child element
+How to remove a child element
+
+
+
+1. How to Insert One Element Before Another
+
+    What if for some reason you want to append it anywhere of your choice? 
+    Maybe before the first element or before the fourth element. 
+    I am here to tell you that it is very much possible. In the code below we are going 
+    to add it before the current first element.
+
+    We are going to be using the insertBefore() JavaScript method which accepts two parameters, 
+    the newNode and the existingNode in this order => document.insertBefore(newNode, existingNode).
+
+           ===>  check practicle part
+
+2. How to Replace a Child Element
+
+    We are going to be using the replaceChild() JavaScript method which accepts two parameters to 
+    replace our first element with the newly created one. 
+    It works in this order => document.replaceChild(newNode, existingNode).
+
+           ===>  check practicle part
+
+3. How to Remove a Child Element
+
+    We are going to be using the removeChild() JavaScript method which accepts just one 
+    parameter ()that is the element you want to remove, which in this case is our original 
+    first element. It works in this order => document.removeChild(element)
+
+           ===>  check practicle part
+
+
+
+### How to Add Styling with CSS
