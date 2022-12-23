@@ -1,7 +1,7 @@
 /******************************  Promise API **************************************/
 
 // const fs = require("fs/promises");  // not working in es6
-import * as fs from "fs/promises";
+// import * as fs from "fs/promises";
 
 // Creating Directory - Right path should be there
 // try {
@@ -79,3 +79,15 @@ import * as fs from "fs/promises";
 // }
 
 /******************************  callback API **************************************/
+import fs from "fs";
+
+// Create  directory - path should we there
+fs.mkdir("./demo2/demo11", (err) => {
+  if (err) {
+    console.log(err);
+  }
+  console.log("Directory Created ..");
+});
+
+/****************************** Synchronous API **************************************/
+fs.mkdirSync("./demo2/demo111");
